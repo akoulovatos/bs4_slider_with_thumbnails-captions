@@ -1,0 +1,92 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css);
+
+body{
+    background:#fff;
+    font-family:'DroidSansMono', sans-serif;
+    min-height:75rem;
+    padding-top:3.5rem;
+}
+.main-content{
+    padding:8.5em 0 8.5em 0;
+}
+.main-content h1{
+    font-size:3em;
+    font-weight:500;
+    text-align:center;
+    text-transform:uppercase;
+    margin-bottom: 100px;
+}
+.main-content .slider-column{
+    min-height:350px;
+}
+.main-content .carousel-control-next,.main-content .carousel-control-prev{
+    bottom:0px;
+}
+.main-content .carousel-control-next{
+    right:34%;
+}
+.main-content .carousel-indicators{
+    position:absolute;
+    right:0;
+    bottom:-200;
+    left:0;
+    z-index:15;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    padding-left:0;
+    margin-right:15%;
+    margin-left:15%;
+    list-style:none;
+}
+.main-content .carousel-item{
+    flex-direction:column;
+}
+.main-content .carousel-item .caption-block{
+    padding:0 30px 0 30px;
+}
+.main-content .carousel-item .caption-block h3{
+    font-size:2em;
+    font-weight:400;
+}
+.main-content .thumbnail-first{
+    margin-top:100px !important;
+}
+.main-content .thumbnail-row{
+    margin-top:20px;
+}
+.main-content .thumbnail-row .col-indicator{
+    cursor:pointer;
+}
+
+@media (max-width: 1366px){
+    .main-content .carousel-control-next,.main-content .carousel-control-prev{
+        bottom:100px !important;
+    }
+}
+@media (max-width: 1024px){
+    .main-content .carousel-control-next,.main-content .carousel-control-prev{
+        bottom:140px !important;
+    }
+}
+@media (max-width: 768px){
+    .main-content .carousel-control-next,.main-content .carousel-control-prev{
+        bottom:260px !important;
+    }
+    .main-content .carousel-control-next{
+        right:0 !important;
+    }
+}
+@media (max-width: 414px){
+    .main-content .slider-column{
+        min-height:540px !important;
+    }
+    .main-content .carousel-control-next,.main-content .carousel-control-prev{
+        bottom:365px !important;
+    }
+}
